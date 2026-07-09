@@ -63,7 +63,6 @@ class CfgMods
 	};
 };
 
-// NO custom CfgAmmo class -- deliberately. Two hard client crashes (access violation in
 // GetCartridgeAtIndex / "cannot eject chambered cartridge" in the chamber FSM) traced to cartridges whose
 // type was a modded, config-only CfgAmmo class: the engine's native cartridge storage/lookup does not
 // handle it reliably. The signal round therefore stores a BONE-STOCK vanilla projectile
